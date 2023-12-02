@@ -1,3 +1,24 @@
+<p-toolbar styleClass="mb-4 gap-2">
+    <p-dialog header="Add a new row" [(visible)]="isRowCreationFormVisible" [style]="{width: '50vw'}">
+        <form>
+            <div class="flex flex-column gap-2 mb-5">
+                <label htmlFor="dataset-label">Dataset Label</label>
+                <input pInputText name="dataset-label" id="dataset-label" [(ngModel)]="newRowFormFields[0]"/>
+            </div>
+            <div *ngFor="let label of labels; let i = index" class="flex flex-column gap-2 mb-5">
+                <label [htmlFor]="label">{{ label }}</label>
+                <input pInputText [name]="label" [id]="label" [(ngModel)]="newRowFormFields[i + 1]"/>
+            </div>
+            <p-button (click)="saveRow()" label="Save Row" class="w-full flex flex-column align-items-stretch mb-3"></p-button>
+        </form>
+
+    </p-dialog>
+    <ng-template pTemplate="left">
+        <button (click)="showDialog()" pButton pRipple label="New" icon="pi pi-plus" class="p-button-success mr-2"></button>
+    </ng-template>
+</p-toolbar>
+
+
 <p-toast></p-toast>
 <p-table [value]="observations" dataKey="id" editMode="row" [tableStyle]="{'min-width': '50rem'}">
     <ng-template pTemplate="header">
