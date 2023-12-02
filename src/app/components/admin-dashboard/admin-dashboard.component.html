@@ -1,4 +1,4 @@
-<div class="card surface-ground p-3">
+<div class="card surface-ground p-3 mb-8 surface-card">
     <p-chart type="bar" class="p-chart"
         [data]="chartJsData" 
         [options]="chartJsOptions"
@@ -6,4 +6,13 @@
     >
     </p-chart>
 </div>
+
+<div class="card mb-8 surface-card">
+    <p-chart type="pie" [data]="chartJsData" [options]="chartJsOptions"></p-chart>
+</div>
+
+<div class="card my-7 surface-card">
+    <p-chart type="line" [data]="chartJsData" [options]="chartJsOptions" height="400"></p-chart>
+</div>
+
 

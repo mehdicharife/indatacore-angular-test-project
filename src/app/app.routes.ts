@@ -19,7 +19,8 @@ export const routes: Routes = [
     {
         path : 'admin',
         children: [
-            {path:'dashboard', loadComponent: () => import("./components/admin-dashboard/admin-dashboard.component").then(mod => mod.AdminDashboardComponent)}
+            {path:'dashboard', loadComponent: () => import("./components/admin-dashboard/admin-dashboard.component").then(mod => mod.AdminDashboardComponent)},
+            {path:'datatable', loadComponent: () => import("./components/data-table/data-table.component").then(mod => mod.DataTableComponent)}
         ],
         loadComponent : () => import("./components/admin/admin.component").then(mod => mod.AdminComponent)
     }
