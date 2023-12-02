@@ -1,0 +1,24 @@
+<p-card header="Register Form" [style]="{padding:'0 1.3em'}">
+    <div class="flex flex-column gap-2 mb-4">
+        <label htmlFor="email">Email:</label>
+        <input pInputText id="email"/>
+    </div>
+
+    <div class="flex flex-column gap-2 mb-4">
+        <label htmlFor="username">Username:</label>
+        <input  pInputText id="username"/>
+    </div>
+
+    <div class="flex flex-column gap-2 mb-4">
+        <label htmlFor="password">Password:</label>
+        <p-password [toggleMask]="true"></p-password>
+    </div>
+
+    <div class="flex flex-column gap-2 mb-5">
+        <label htmlFor="password">Confirm Password:</label>
+        <p-password [toggleMask]="true"></p-password>
+    </div>
+    
+    <p-button label="Register" class="w-full flex flex-column align-items-stretch" severity="success"></p-button>
+
+</p-card>

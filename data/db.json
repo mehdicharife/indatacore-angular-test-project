@@ -1,0 +1,17 @@
+{
+    "datasets": [
+        {
+            "label" : "dataset1",
+            "data" : [10,20,40,90]
+        },
+        {
+            "label" : "dataset2",
+            "data" : [50,240,10,70]
+        },
+        {
+            "label" : "dataset3",
+            "data" : [90,70,30,30]
+        }
+
+    ]
+}

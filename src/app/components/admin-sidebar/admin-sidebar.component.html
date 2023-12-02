@@ -1,0 +1,11 @@
+<div class="sidenav">
+    <ul class="sidenav-nav m-0 p-0">
+        <li  *ngFor="let item of navItems" class="sidenav-nav-item px-3 py-4">
+            <a href="#" class="sidenav-nav-link flex align-items-center" [routerLink]="item.link">
+                <i class="sidenav-link-icon mr-3" [class]="item.icon" style="font-size:1.65rem;"></i>
+                <span  class="sidenav-link-text">{{ item.label }}</span>
+            </a>
+        </li>
+    </ul>
+</div>
+

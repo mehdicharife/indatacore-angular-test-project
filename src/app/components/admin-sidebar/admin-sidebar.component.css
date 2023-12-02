@@ -1,0 +1,26 @@
+:host {
+    transition: all .5s ease;
+    min-width: 280px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+ul li {
+    list-style: none;
+}
+
+button {
+    background: none;
+    border: none;
+}
+
+.sidenav {
+    background-color: white;
+    
+    height: 100vh;
+    box-shadow: 0.0rem 0 .75rem 0 #8690a3
+}
+
